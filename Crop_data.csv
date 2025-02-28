@@ -1,0 +1,41 @@
+Crop Name,Soil Type,Sunlight Hours (per day),Water Requirement (L/day),Fertilizer Type,Pot Spacing (cm),Irrigation Technique,Min Temp (°C),Max Temp (°C),Growth Duration (days)
+Tomato,Loamy,8,2.0,20-20-20 NPK,50,Drip,18,32,70
+Spinach,Sandy Loam,6,1.2,10-10-10 NPK,15,Drip,12,22,40
+Capsicum,Loamy,7,2.0,20-20-20 NPK,40,Drip,18,32,90
+Carrot,Sandy,6,0.8,Organic 5-5-5,40,Drip,15,25,80
+Coriander,Sandy Loam,6,1.2,Vermicompost,40,Sprinkler,18,28,45
+Lettuce,Loamy,6,1.5,Compost,15,Drip,16,26,60
+Cabbage,Loamy,6,2.0,Compost,50,Sprinkler,18,30,90
+Onion,Sandy Loam,7,1.0,Organic 5-5-5,25,Drip,18,30,100
+Garlic,Loamy,6,1.2,Organic 5-5-5,15,Drip,18,30,120
+Chili,Sandy Loam,8,2.5,20-20-20 NPK,20,Drip,22,35,100
+Beans,Loamy,6,1.8,Vermicompost,45,Drip,16,28,65
+Peas,Clay Loam,6,1.2,Compost,40,Drip,18,28,75
+Pumpkin,Sandy Loam,8,3.0,10-10-10 NPK,100,Sprinkler,20,30,90
+Radish,Sandy,6,1.0,10-10-10 NPK,40,Drip,15,25,30
+Okra,Sandy Loam,7,2.0,Compost,50,Drip,24,35,75
+Brinjal,Loamy,7,2.0,20-20-20 NPK,55,Drip,20,32,80
+Mint,Sandy Loam,6,1.2,Manure,30,Sprinkler,16,26,40
+Basil,Sandy,7,1.0,Compost,20,Drip,20,30,60
+Cucumber,Loamy,7,2.5,20-20-20 NPK,50,Drip,20,30,60
+Zucchini,Loamy,7,2.0,Compost,60,Drip,20,30,55
+Lemon,Sandy Loam,8,3.0,Organic 5-5-5,100,Manual,20,30,180
+Strawberry,Sandy Loam,6,1.5,Organic 5-5-5,25,Drip,15,25,120
+Blueberry,Loamy,7,2.0,Organic 5-5-5,60,Drip,15,25,150
+Papaya,Sandy Loam,8,3.5,Manure,80,Drip,25,35,180
+Guava,Loamy,8,3.0,Compost,100,Sprinkler,20,30,200
+Pomegranate,Sandy,7,2.0,Compost,80,Drip,20,30,150
+Fig,Sandy Loam,8,1.5,10-10-10 NPK,60,Manual,20,30,120
+Dragon Fruit,Sandy Loam,7,2.5,Vermicompost,50,Drip,25,35,120
+Watermelon,Sandy,8,4.0,20-20-20 NPK,100,Sprinkler,20,30,80
+Melon,Sandy,8,3.5,Organic 5-5-5,80,Sprinkler,20,30,90
+Celery,Loamy,6,1.5,Compost,30,Drip,15,25,90
+Dill,Sandy Loam,6,1.2,Manure,40,Sprinkler,20,28,60
+Rosemary,Sandy,7,1.0,Compost,40,Drip,18,30,90
+Thyme,Sandy Loam,7,1.0,Vermicompost,30,Drip,18,30,75
+Oregano,Sandy Loam,6,1.2,Vermicompost,25,Drip,18,30,60
+Parsley,Loamy,6,1.5,10-10-10 NPK,25,Sprinkler,15,25,50
+Ginger,Loamy,6,2.0,Organic 5-5-5,40,Drip,20,30,240
+Turmeric,Loamy,6,2.0,Vermicompost,40,Drip,20,30,250
+Chives,Sandy,6,1.2,Compost,20,Sprinkler,15,25,60
+Fenugreek,Sandy Loam,6,1.0,10-10-10 NPK,30,Sprinkler,20,30,40

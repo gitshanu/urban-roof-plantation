@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations - Urban Roof Plantation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='leaf.png') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='leaf.png') }}" alt="Leaf Logo">
+            <span>Urban Roof Plantation</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div class="result-container">
+            <header class="result-header">
+                <h1>Recommendations</h1>
+                <p class="subtitle">Your rooftop gardening plan</p>
+            </header>
+            {% if tables %}
+                <div class="table-wrapper">
+                    {{ tables[0] | safe }}
+                </div>
+            {% else %}
+                <p class="error-message">{{ message }}</p>
+            {% endif %}
+            <div class="button-container">
+                <a href="/" class="back-btn">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="{{ url_for('static', filename='leaf.png') }}" alt="Leaf Logo" class="footer-logo-img">
+                    <span>Urban Roof Plantation</span>
+                </div>
+                <p class="footer-tagline">Growing a greener future</p>
+            </div>
+            <div class="footer-center">
+                <ul class="footer-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="footer-social">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+                <p class="footer-contact">support@urbanroof.com</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="footer-copy">© 2025 Urban Roof Plantation</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle"><img src="{{ url_for('static', filename='leaf.png') }}" alt="Chat"></div>
+        <div class="chatbot-window">
+            <div class="chat-header">
+                <span>Garden Assistant</span>
+                <span class="chat-close">×</span>
+            </div>
+            <div class="chat-body" id="chat-body"></div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Ask about your garden...">
+                <button id="chat-send">➤</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>

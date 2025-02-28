@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Roof Plantation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='leaf.png') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='leaf.png') }}" alt="Leaf Logo">
+            <span>Urban Roof Plantation</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Grow Green on Your Roof</h1>
+        <p class="subtitle">Plan your urban garden with smart recommendations</p>
+    </header>
+
+    <section class="main-content">
+        <div class="input-container">
+            <h2>Get Started</h2>
+            <form method="POST" action="/" class="input-form">
+                <div class="form-group">
+                    <label for="area">Rooftop Area (m²)</label>
+                    <input type="number" id="area" name="area" step="any" placeholder="e.g., 456" required>
+                </div>
+                <div class="form-group">
+                    <label for="water">Water Tank Capacity (L)</label>
+                    <input type="number" id="water" name="water" step="any" placeholder="e.g., 100" required>
+                </div>
+                <div class="form-group">
+                    <label for="sunlight">Sunlight Availability (hours/day)</label>
+                    <input type="number" id="sunlight" name="sunlight" step="any" placeholder="e.g., 8" required>
+                </div>
+                <button type="submit" class="submit-btn">Get Recommendations</button>
+            </form>
+        </div>
+        <div class="widget-container">
+            <div class="widget">
+                <img src="{{ url_for('static', filename='tree.png') }}" alt="Tree" class="widget-icon">
+                <h3>40+ Crops</h3>
+                <p>Explore a variety of plants for your roof</p>
+                <div class="widget-info">
+                    <p>From tomatoes to herbs, our system supports over 40 crops tailored to your rooftop’s unique conditions—area, water, and sunlight.</p>
+                </div>
+            </div>
+            <div class="widget">
+                <img src="{{ url_for('static', filename='leaf.png') }}" alt="Leaf" class="widget-icon">
+                <h3>Eco-Friendly</h3>
+                <p>Reduce your carbon footprint</p>
+                <div class="widget-info">
+                    <p>Grow your own food, lower CO2 emissions, and enhance urban air quality with sustainable rooftop gardening practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <h2>What Users Say</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <img src="{{ url_for('static', filename='leaf.png') }}" alt="Leaf" class="review-leaf">
+                <p class="review-text">"This app made planning my rooftop garden so easy! The recommendations were spot-on."</p>
+                <p class="review-author">- Priya, Urban Gardener</p>
+            </div>
+            <div class="review-card">
+                <img src="{{ url_for('static', filename='leaf.png') }}" alt="Leaf" class="review-leaf">
+                <p class="review-text">"I love how eco-friendly it is. Growing my own veggies feels rewarding."</p>
+                <p class="review-author">- Arjun, City Resident</p>
+            </div>
+            <div class="review-card">
+                <img src="{{ url_for('static', filename='leaf.png') }}" alt="Leaf" class="review-leaf">
+                <p class="review-text">"The chatbot helped me tweak my setup—super useful!"</p>
+                <p class="review-author">- Sneha, Homeowner</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="{{ url_for('static', filename='leaf.png') }}" alt="Leaf Logo" class="footer-logo-img">
+                    <span>Urban Roof Plantation</span>
+                </div>
+                <p class="footer-tagline">Growing a greener future</p>
+            </div>
+            <div class="footer-center">
+                <ul class="footer-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="footer-social">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+                <p class="footer-contact">support@urbanroof.com</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="footer-copy">© 2025 Urban Roof Plantation</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle"><img src="{{ url_for('static', filename='leaf.png') }}" alt="Chat"></div>
+        <div class="chatbot-window">
+            <div class="chat-header">
+                <span>Garden Assistant</span>
+                <span class="chat-close">×</span>
+            </div>
+            <div class="chat-body" id="chat-body"></div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Ask about your garden...">
+                <button id="chat-send">➤</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>
