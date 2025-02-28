@@ -8,7 +8,7 @@ app = Flask(__name__)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 data = pd.read_csv(os.path.join(BASE_DIR, "crop_data.csv"))
 
-together_client = Together(api_key=os.environ.get("c3d2c0fb6d80cded08f811ae119f4a22106fcc8fd31beadbd6ea143fda765465"))
+together_client = Together(api_key=os.environ.get("TOGETHER_AI_API_KEY"))
 
 def recommend_crops(rooftop_area, water_capacity, sunlight_hours):
     if rooftop_area <= 0 or water_capacity <= 0 or sunlight_hours <= 0:
