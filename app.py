@@ -4,11 +4,10 @@ from together import Together
 
 app = Flask(__name__)
 
-# Load plant data
-data = pd.read_csv("crop_data.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+data = pd.read_csv(os.path.join(BASE_DIR, "crop_data.csv"))
 
-# Initialize Together AI client
-together_client = Together(api_key="c3d2c0fb6d80cded08f811ae119f4a22106fcc8fd31beadbd6ea143fda765465")  # Replace with your API key
+together_client = Together(api_key=os.environ.get("c3d2c0fb6d80cded08f811ae119f4a22106fcc8fd31beadbd6ea143fda765465"))
 
 def recommend_crops(rooftop_area, water_capacity, sunlight_hours):
     if rooftop_area <= 0 or water_capacity <= 0 or sunlight_hours <= 0:
@@ -132,4 +131,4 @@ def chat():
     return jsonify({"response": answer})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=False)
