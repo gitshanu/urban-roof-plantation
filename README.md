@@ -41,11 +41,8 @@ urban-roof-plantation/
    git clone https://github.com/gitshanu/urban-roof-plantation.git
    cd urban-roof-plantation
 
-Install Dependencies:
+Install Dependencies:   
    pip install -r requirements.txt
-
-   Set Environment Variable
-export TOGETHER_AI_API_KEY="your_api_key_here"
 
 Run Locally
 python app.py
