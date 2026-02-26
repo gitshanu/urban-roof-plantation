@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from flask import Flask, request, render_template, jsonify
 from together import Together
-
+#i like urban roofs
 app = Flask(__name__)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
